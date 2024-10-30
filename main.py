@@ -1,8 +1,9 @@
-from fastapi import FastAPI
-
-app = FastAPI()
+import getpass
 
 
-@app.get("/items/{item_id}")
-async def read_item(item_id: int):
-    return {"item_id": item_id}
+
+master_password = getpass.getpass('Password:')
+
+print(master_password)
+
+
