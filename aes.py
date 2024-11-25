@@ -4,19 +4,24 @@ class aes:
         self.total_rounds = 10
         self.curr_round = 0
     
-    def keyExpansion(self):
+    def key_expansion(self):
         pass
 
-    def addRoundKey(self):
+    def add_roundKey(self):
         pass
     
-    def subBytes(self):
+    def sub_bytes(self):
         pass
 
-    def shiftRows(self):
+    def shift_rows(self):
         pass
 
-    def mixColumns(self):
+    def mix_columns(self):
         pass
 
-    
+    def key_schedule(self):
+        round_constant = 0
+        if self.curr_round == 1:
+            round_constant = 1
+        
+
